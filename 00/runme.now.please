@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Hi There and welcome."
+[ -z "${1}" ] && echo "Please run me again, this time with your name." && exit 2
+echo "Hi $1!!! and welcome, I hope you will have fun."
+echo "$1, Please make sure you are not running this game under your machine, but only under virtual env just for this game."
+echo "$1$(date +%F-%H-%M)" > ~/$(date +%F-%H-%M)
+echo "You can now cd to room 01"
